@@ -65,3 +65,73 @@ This script asks questions and creates a paragraph. It is simple script but show
 ```bash
 git clone https://github.com/your-username/oss-audit-24BHI10078.git
 cd oss-audit-24BHI10078
+
+---
+
+### Step 2: Install Apache
+```bash
+sudo apt update
+sudo apt install apache2
+
+---
+
+### Step 3: Check Apache Status
+```bash
+systemctl status apache2
+
+---
+
+### Step 4: Open in Browser
+```bash
+http://localhost
+
+---
+
+### Step 5: Give Permission to Scripts
+```bash
+chmod +x scripts/*.sh
+
+---
+
+### Step 6: Run Scripts
+```bash
+./scripts/script1_system_identity.sh
+./scripts/script2_package_inspector.sh
+./scripts/script3_disk_auditor.sh
+./scripts/script4_log_analyzer.sh /var/log/apache2/error.log
+./scripts/script5_manifesto.sh
+
+---
+
+### Step 7:
+```bash
+ls /etc/apache2
+ls /var/log/apache2
+
+---
+
+### Step 8: Restart Apache
+```bash
+sudo systemctl restart apache2
+
+---
+
+## Screenshots
+Screenshots are added in screenshots folder. It includes script outputs and Apache running status.
+
+---
+
+## Report
+Detailed report is available in report folder.
+
+---
+
+## What I Learned
+From this project I learned how Apache works and how Linux handles services and logs. At first it was confusing, but after practice I understood better.
+I also got more comfortable using terminal and running commands.
+
+---
+
+## Conclusion
+This project helped me understand open source software in practical way. Apache is a useful tool and widely used in real systems.
+Overall, this project improved my confidence and helped me connect theory with real implementation.
